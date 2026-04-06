@@ -1,0 +1,25 @@
+# Node
+node_modules/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+
+# VS Code
+.vscode/
+
+# Java / Spring Boot
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

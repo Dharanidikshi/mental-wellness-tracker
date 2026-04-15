@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Mood Analyzer</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Particles -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+
+<body>
+
+<!-- Background Animation -->
+<div id="particles-js"></div>
+
+<div class="container">
+
+  <h1 class="title">AI Mood Analyzer 🤖</h1>
+
+  <div class="card">
+
+    <label>How did you sleep?</label>
+    <select id="sleep">
+      <option value="3">😴 Very Good</option>
+      <option value="2">🙂 Okay</option>
+      <option value="1">😣 Poor</option>
+    </select>
+
+    <label>Your energy level?</label>
+    <select id="energy">
+      <option value="3">⚡ High</option>
+      <option value="2">🙂 Medium</option>
+      <option value="1">😩 Low</option>
+    </select>
+
+    <label>Your stress level?</label>
+    <select id="stress">
+      <option value="1">😌 Low</option>
+      <option value="2">😐 Medium</option>
+      <option value="3">😰 High</option>
+    </select>
+
+    <label>How do you feel emotionally?</label>
+    <select id="feeling">
+      <option value="3">😊 Happy</option>
+      <option value="2">😐 Neutral</option>
+      <option value="1">😢 Sad</option>
+    </select>
+
+    <button onclick="analyzeMood()">Analyze Mood</button>
+
+  </div>
+
+  <div id="result" class="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
